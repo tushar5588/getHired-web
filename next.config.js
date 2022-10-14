@@ -1,10 +1,10 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-  compiler: {
-    styledComponents: true,
-  },
-}
+const withImages = require("next-images");
 
-module.exports = nextConfig
+module.exports = withImages({
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  env: {
+    API_BASE_URL: "http://localhost:4100"
+  },
+});
