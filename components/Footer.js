@@ -105,7 +105,7 @@ const Footer = () => {
             <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6">
               <div className="footer-logo mb-20">
                 <Link href="">
-                  <img src="assets/img/logo/logo2_footer.png" alt="" />
+                  <img src="assets/img/logo/logo2_footer.png" width={120} alt="" />
                 </Link>
               </div>
             </div>
