@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import axios from "axios";
+import { getJobs } from "../../pages/api/allApi";
 
 const JobListing = () => {
+  useEffect(()=>{
+    getJobs();
+  },[])
   return (
     <div>
       <div className="slider-area ">
